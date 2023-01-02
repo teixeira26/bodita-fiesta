@@ -26,11 +26,11 @@ function App() {
   const fiesta = {
     iconoIglesia: './assets/icono-fiesta.svg',
     titulofiesta: 'FIESTA',
-    textofiestal1: '12 de Noviembre a las 16:00 hs.',
-    textofiestal2: 'falso 12221, lorem, ipsum lorem.',
+    textofiestal1: '12 de febrero 2023 a las 11:00hs en la quinta Ruca Malen',
+    textofiestal2: 'Sunchales 6029, González Catán',
     textofiestal3: '¡Te esperamos!',
     textoButton: 'LLEGAR A LA FIESTA', 
-    urlButton: 'https://www.google.com.ar/maps/place/La+Casita+Loca/@34.6705515,-77.3440518,17z/data=!3m1!4b1!4m5!3m4!1s0x89a905b0579add6d:0x7e2abd40eefb0d04!8m2!3d34.6705471!4d-77.3418631'
+    urlButton: 'https://www.google.com/maps/place/Ruca+malem/@-34.788801,-58.6340509,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcc497f9ffa725:0xd08c354669ff76e7!8m2!3d-34.788801!4d-58.6340509'
   }
 
   return (
@@ -40,12 +40,13 @@ function App() {
       <StopWatch></StopWatch>
       <section className='iconos'>
         <CardMapa icono={ceremonia.iconoIglesia} urlButton={ceremonia.urlButton} titulo={ceremonia.tituloCeremonia} textol1={ceremonia.textoCeremonial1} textol2={ceremonia.textoCeremonial2} textol3={ceremonia.textoCeremonial3} textoButton={ceremonia.textoButton}></CardMapa>
-        {/*<CardMapa icono={fiesta.iconoIglesia} urlButton={fiesta.urlButton} titulo={fiesta.titulofiesta} textol1={fiesta.textofiestal1} textol2={fiesta.textofiestal2} textol3={fiesta.textofiestal3} textoButton={fiesta.textoButton}></CardMapa>*/}
+        <CardMapa icono={fiesta.iconoIglesia} urlButton={fiesta.urlButton} titulo={fiesta.titulofiesta} textol1={fiesta.textofiestal1} textol2={fiesta.textofiestal2} textol3={fiesta.textofiestal3} textoButton={fiesta.textoButton}></CardMapa>
       </section>
         <Galeria></Galeria>
       <Regalos></Regalos>
       <ConfirmarAsistencia></ConfirmarAsistencia>
       <RedSocial></RedSocial>
+        <DressCode></DressCode>
       <Gracias></Gracias>
       <Footer></Footer>
     </div>
